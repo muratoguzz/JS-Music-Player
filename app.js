@@ -168,7 +168,7 @@ const selectedMusic = (li) => {
     isPlayingNow();
 };
 
-const isPlayingNow = () => { //seçilen müzik listede arka plan rengi eklenerek işaretlenir
+const isPlayingNow = () => { //seçilen müziğe arka plan rengi eklenerek liste üzerinde işaretlenir
     for(let li of ul.querySelectorAll("li")) {
         if(li.classList.contains("playing")) {
             li.classList.remove("playing");
